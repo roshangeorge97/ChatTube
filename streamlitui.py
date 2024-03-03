@@ -41,7 +41,7 @@ def main():
             st.session_state["youtubequery"] = YoutubeQuery(st.session_state["OPENAI_API_KEY"])
         else:
             st.session_state["youtubequery"] = None
-
+ 
     st.header("Chat-Tube")
 
     if st.text_input("OpenAI API Key", value=st.session_state["OPENAI_API_KEY"], key="input_OPENAI_API_KEY", type="password"):
